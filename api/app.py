@@ -5,6 +5,7 @@ from flask_login import current_user, login_user, UserMixin, LoginManager, login
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from flask_bcrypt import Bcrypt
+import csv
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:M43hdr3sch3r@localhost/cookers"
@@ -33,8 +34,8 @@ class Recipes(db.Model):
     recipe_name = db.Column(db.String(50), unique=False, nullable=False)
     form_of_diet = db.Column(db.String(50), unique=False, nullable=False)
     source_of_recipe = db.Column(db.String(50), unique=False, nullable=False)
-    additional_information = db.Column(db.Text, unique=False, nullable=False)
-    duration = db.Column(db.String(50), unique=False, nullable=False)
+    additional_information = db.Column(db.Text, unique=False, nullable=True)
+    duration = db.Column(db.String(50), unique=False, nullable=True)
     balanced_nutrients = db.Column(db.String(50), unique=False, nullable=False)
     kind_of_meal = db.Column(db.String(50), unique=False, nullable=False)
     season = db.Column(db.String(50), unique=False, nullable=False)
@@ -222,6 +223,33 @@ def show_ingredients():
             return Response(json.dumps(ingredient_list_json), mimetype="application/json")
     else:
         return render_template("show_ingredients.html")
+
+@app.route("/import", methods=["POST", "GET"])
+def import_csv():
+    with open(r"C:\Users\I015661\PycharmProjects\Cookers\Rezept_SQL.csv") as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=";")
+        for index, row in enumerate(csv_reader):
+            if index == 0:
+                pass
+            else:
+                if row[3] == "N/A":
+                    row[3] = ""
+
+                recipe = Recipes(recipe_name=row[1], owner=current_user, form_of_diet=row[0],
+                                 source_of_recipe=row[2],
+                                 additional_information=row[3], duration=row[4],
+                                 balanced_nutrients=row[6],
+                                 kind_of_meal=row[7], season=row[8], cuisine=row[9])
+                db.session.add(recipe)
+                db.session.commit()
+                current_recipe = Recipes.query.filter_by(recipe_name=row[1], user_id=current_user.get_id()).first()
+                list_of_ingredients = row[5].split(", ")
+                for element in list_of_ingredients:
+                    ingredients = Ingredients(ingredient=element, amount=1, unit="Einheit", recipe_name=current_recipe,
+                                              owner=current_user)
+                    db.session.add(ingredients)
+                    db.session.commit()
+    return redirect(url_for("index"))
 
 
 if __name__ == "__main__":

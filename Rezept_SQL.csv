@@ -1,0 +1,71 @@
+Ernährungsform;Rezept;Quelle;Bemerkung;Dauer (<1, 1-2, >2);Hauptzutaten;Ausgewogen(Einteilung A, B, C);Art (Auflauf, Onepot, Mixed);Jahreszeit, wg saisonal;Küche
+vegetarisch;Käsespätzle mit Blattspinat;Sparrezepte S. 130;Sonnenblumenkerne nötig;;Spinat, Spätzle;B;Auflauf;ganzjährig;Deutsch
+vegetarisch;Pizza;OneNote;N/A;;Tomaten, Pilze, Mais, Brokkoli, Oliven, Peperoni, Paprika;B;Pizza;ganzjährig;Italienisch
+vegetarisch;Nudelsalat mit Rucola;OneNote;N/A;;Nudeln, getrocknete Tomaten, Rucola, Pinienkerne;B;Salat;ganzjährig;Italienisch
+vegetarisch;Reis mit Zucchini und Paprika;Sparrezepte S.183;N/A;;Reis, Zucchini, Paprika;B;Reisgericht;ganzjährig;N/A
+vegetarisch;Pfannkuchen;Schulkochbuch S. 318;N/A;;Mehl, Eier;C;Pfannengericht;ganzjährig;Deutsch
+vegetarisch;Kaiserschmarrn;Schulkochbuch S. 320;im Wok machen, Rosinen erst nachher in Teig;;Mehl, Eier, Rosinen;C;Pfannengericht;ganzjährig;Deutsch
+vegetarisch;Käse-Porree-Suppe;Internet;mit kleinen Nudeln ca 250 g, Tofugehacktem und 1 Stange Porree;;Nudeln, Tofu, Lauch;B;Suppe;ganzjährig;Deutsch
+vegan;Kürbissuppe;OneNote;mit Birne reinklatschen, kokosmilch und curry;;Kürbis, Kartoffeln, Möhren, Birne;B;Suppe;Herbst, Winter;Deutsch
+vegetarisch;Nudelauflauf à la Mama;OneNote;Salami weglassen, Brokkoli hinzufügen;;Nudeln, Paprika, Mais, Brokkoli;B;Auflauf;ganzjährig;Deutsch
+vegetarisch;Chili-sin-Carne-Auflauf;OneNote;Tofu;;Tofu, Reis, Tomaten, Mais, Kidneybohnen, Nachos;A;Auflauf;ganzjährig;Mexikanisch
+vegan;Linsencurry mit Mango und Kokos;OneNote;N/A;;Linsen, Möhren, Mango;A;Curry;ganzjährig;Indisch
+vegan;Couscous-Gemüse-Pfanne mit Harissa;OneNote;N/A;;Couscous, Brokkoli, Paprika, Möhren, Erbsen, Frühlingszwiebeln;B;Reisgericht;ganzjährig;Orientalisch
+vegetarisch;Kichererbsen-Auberginen-Pfanne;OneNote;N/A;;Aubergine, Paprika, Tomaten, Kichererbsen, Ajvar, Ziegenfrischkäse;A;Curry;ganzjährig;Indisch
+vegan;Spinat-Kichererbsen-Gericht;OneNote;N/A;;Spinat, Tomaten, Kichererbsen, Reis;A;Curry;ganzjährig;Indisch
+vegetarisch;Nudeln mit Spinat und Tomaten;OneNote;N/A;;Nudeln, Spinat, Schafskäse, Tomaten;A;Nudelgericht;ganzjährig;Italienisch
+vegan;Gemüse-Linsen-Curry;Schulkochbuch S.282;N/A;;Frühlingszwiebeln, Möhren, Erbsen, Linsen;A;Curry;ganzjährig;Indisch
+vegetarisch;Kürbis-Kartoffeln-Gratin;OneNote;Kartoffeln + Kürbis vorkochen oder genau so viel Flüssigkeit reintun wie laut Rezept;;Kartoffeln, Kürbis;C;Auflauf;Herbst, Winter;Deutsch
+vegetarisch;Gefüllte Süßkartoffeln;YouTube;N/A;;Süßkartoffeln, Spinat, Paprika, Schafskäse, Frühlingszwiebeln;B;Anderes;ganzjährig;N/A
+vegan;Pikantes Kürbiscurry;OneNote;mit Reis;;Kürbis, Reis;B;Curry;Herbst, Winter;Indisch
+vegan;Süßkartoffel-Gnocchi-Bowl;OneNote;N/A;;Süßkartoffeln, Tomaten, Gnocchi, Spinat, Pinienkerne;C;Bowl;ganzjährig;N/A
+vegan;Ofenkürbis mit Kartoffelpü und Feldsalat;Random;N/A;;Kürbis, Feldsalat, Kartoffeln;C;Mixed;Herbst, Winter;Deutsch
+vegan;Indisches Linsencurry à la Heni;OneNote;mit indischer Gewürzmischung machen, aufpassen, dass Curry nicht anbrennt, gut mit Salz und Pfeffer würzen;;Frühlingszwiebeln, Linsen, Paprika, Tomaten;A;Curry;ganzjährig;Indisch
+vegan;Linsen-Paprika-Curry mit Naan;Veg. S 154;N/A;;Linsen, Paprika;B;Curry;ganzjährig;Indisch
+vegetarisch;Brokkoli-Nudelauflauf;Auflauf S. 80;N/A;;Nudeln, Brokkoli, Mandeln;C;Auflauf;ganzjährig;Deutsch
+vegetarisch;Falafelwrap;OneNote;Mit falafeln und Hummus selbst gemacht;;Paprika, Hummus, Peperoni, Falafeln;A;Wraps;ganzjährig;Orientalisch
+vegan;Kichererbsensalat;OneNote;am besten länger durchziehen lassen;;Kichererbsen, Kidneybohnen, Cherrytomaten, Chili, Couscous;A;Salat;ganzjährig;Orientalisch
+vegan;Pilzrisotto;OneNote;weniger Weißwein, achten, dass Risotto nicht anbackt obwohl oben noch Flüssigkeit drin ist;;Reis, Champignons, Frühlingszwiebeln, Wein;C;Reisgericht;Herbst, Winter;Italienisch
+vegan;Linsendhal mit Spinat und Süßkartoffeln;OneNote;N/A;;Linsen, Süßkartoffeln, Spinat, Frühlingszwiebeln;B;Curry;ganzjährig;Indisch
+vegetarisch;Süßkartoffel-Wraps;KäptnCook;N/A;;Süßkartoffeln, Avocado, Chili, Möhren, Tomaten, Salat, Schafskäse;B;Wraps;ganzjährig;Mexikanisch
+vegetarisch;Kartoffel-Wedges-Pfanne;KäptnCook;N/A;;Kartoffeln, Zucchini, Cherrytomaten, Schafskäse, Kidneybohnen;A;Pfannengericht;ganzjährig;N/A
+vegetarisch;Pasta-Bowl mit Erbsen und Avocado;KäptnCook;N/A;;Avocado, Fenchel, Nudeln, Erbsen;B;Nudelgericht;ganzjährig;Italienisch
+vegan;Zucchini-Kicherebsen-Pfanne;KäptnCook;N/A;;Zucchini, Kichererbsen;B;Pfannengericht;ganzjährig;N/A
+vegetarisch;Frühstückswraps;KäptnCook;N/A;;Avocado, Paprika, Frischkäse, Eier;B;Wraps;ganzjährig;N/A
+vegetarisch;Halloumi-Erbsen-Curry;KäptnCook;N/A;;Chili, Halloumi, Tomaten, Erbsen;B;Curry;ganzjährig;N/A
+vegan;Kartoffel-Brokkoli-Auflauf;OneNote;N/A;;Brokkkoli, Kartoffeln;C;Auflauf;ganzjährig;Deutsch
+vegan;Ciabattasalat;OneNote;N/A;;Ciabatta, Cherrytomaten, Avocado, Pinienkerne;B;Salat;ganzjährig;Italienisch
+vegan;Chili con Sojageschnetzeltes;VeggieKochen S.168;N/A;;Sojageschnetzeltes, Paprika, Tomaten, Mais, Kidneybohnen;A;Eintopf;ganzjährig;Mexikanisch
+vegan;Bolognese mit Pilzen und Linsen;OneNote;N/A;;Linsen, Möhren, Champignons, Tomaten, Nudeln;A;Nudelgericht;ganzjährig;Italienisch
+vegetarisch;Rigatoni mit Erbenpesto;Veg. S 208;N/A;;Nudeln, Pinienkerne, Erbsen, getrocknete Tomaten, Rucola;C;Nudelgericht;ganzjährig;Italienisch
+vegan;Falafelbowl;OneNote;N/A;;Reis, Kichererbsen, Avocado, Tomaten, Salat, Möhren;A;Bowl;ganzjährig;Orientalisch
+vegan;Chinesische Reispfanne;OneNote;N/A;;Möhren, Erbsen, Reis, Frühlingszwiebeln;B;Reisgericht;ganzjährig;N/A
+vegan;Kicherebsen-Spinat-Curry;KäptnCook;N/A;;Spinat, Reis, Kichererbsen, Tomaten;B;Curry;ganzjährig;Orientalisch
+vegan;Chili con Linsen;Chefkoch;mit Tofuwürfeln, Kidneybohnen, Mais;;Tofu, Kidneybohnen, Mais, Linsen, Chili, Paprika;A;Eintopf;ganzjährig;Mexikanisch
+vegetarisch;Nudeln mit Champignonsrahmsoße und Salat;Chefkoch;Räuchertofu, Feldsalat mit Tomaten, Feta, Kürbiskernen;;Tofu, Champignons, Nudeln, Feldsalat, Schafskäse, Cherrytomaten;A;Mixed;ganzjährig;Deutsch
+vegan;Gemüselasagne;OneNote;N/A;;Spinat, Karotten, Paprika, Champignons;B;Auflauf;ganzjährig;Italienisch
+vegan;Linseneintopf mit Tofu;OneNote;mit Senf, Soja, Karotten, Porre, Suppengemüse;;Karotten, Linsen, Tofu, Kartoffeln, Porre;B;Eintopf;ganzjährig;Deutsch
+vegan;Kokosreis mit Rosenkohl und Avocado;OneNote;N/A;;Reis, Rosenkohl, Frühlingszwiebeln, Avocado;B;Mixed;Winter, Frühling;Deutsch
+vegan;Grünes Spargelrisotto;OneNote;N/A;;Spargel, Spinat, Reis;B;Reisgericht;Frühling, Sommer;N/A
+vegetarisch;Asiatische Nudelpfanne;OneNote;Mit Lauch, Karotten, Paprika, Sprossen;;Mienudeln, Lauch, Möhren, Paprika, Sprossen, Eier;A;Pfannengericht;ganzjährig;Asiatisch
+vegan;Blumenkohl-Curry mit Spinat;OneNote;N/A;;Blumenkohl, Kichererbsen, Spinat, Reis;A;Curry;ganzjährig;Indisch
+vegetarisch;Blumenkohl-Brokkoli-Auflauf;OneNote;N/A;;Blumenkohl, Brokkoli;B;Auflauf;ganzjährig;N/A
+vegan;Brokkoli-Buddha-Bowl;OneNote;N/A;;Brokkoli, Zucchini, Möhren, Tomaten, Salat, Avocado;B;Bowl;ganzjährig;Rohkost
+vegan;Linsensalat;OneNote;mit Apfel + Baguette + Cherrytomaten + Gurke;;Linsen, Tofu, Spinat, Cherrytomaten, Gurke, Apfel;A;Salat;ganzjährig;N/A
+vegetarisch;Pasta-Salat mit geröstetem Gemüse;KäptnCook;N/A;;Zucchini, Paprika, Cherrytomaten, Champignons, Mozarella, Nudeln, Oliven;A;Salat;ganzjährig;Italienisch
+vegan;Pasta all'amatriciana mit Tofu;KäptnCook;N/A;;Tomaten, Tofu, Nudeln;B;Nudelgericht;ganzjährig;Italienisch
+vegan;Grünkernfrikadellen;veg.;auch easy ohne Ei;;Grünkern, Frühlingszwiebeln, Haferflocken;A;Anderes;ganzjährig;Deutsch
+vegan;Spargelrisotto;KäptnCook;teuer;;Spargel, Reis;C;Reisgericht;Frühling;N/A
+vegetarisch;Chili-sin-Carne-Auflauf;KäptnCook;N/A;;Paprika, getrocknete Tomaten, Tofuhack, Mais, Kidneybohnen;B;Auflauf;ganzjährig;Mexikanisch
+vegan;Bulgogi-Nudelsalat nach koreanischer Art;KäptnCook;N/A;;Frühlingszwiebeln, Möhren, Tofuhack, Nudeln;B;Salat;ganzjährig;Koreanisch
+vegetarisch;Reis mit getrockneten Tomaten, Spinat & Schafskäse;KäptnCook;N/A;;Spinat, Feta, Reis, getrocknete Tomaten;B;Reisgericht;ganzjährig;N/A
+vegan;Gebratener Reis mit Gemüse & Cashews;KäptnCook;N/A;;Brokkoli, Möhren, Zucchini, Frühlingszwiebeln, Cashewkerne, Reis;B;Reisgericht;ganzjährig;Asiatisch
+vegan;Gemüsepaella;KäptnCook;N/A;;Paprika, Tofu, Reis, Artischocken, getrocknete Tomaten, Oliven, Erbsen;A;Reisgericht;ganzjährig;Spanisch
+vegetarisch;Kässpätzleauflauf mit Wirsing;KäptnCook;N/A;;Wirsing, Spätzle;C;Auflauf;Winter, Frühling;Deutsch
+vegan;Pastinaken-Bohnen-Suppe mit Apfel;KäptnCook;N/A;;Pastinaken, Apfel, weiße Bohnen;B;Suppe;Winter, Frühling;Deutsch
+vegan;Tomatenrisotto;KäptnCook;N/A;;Cherrytomaten, Reis, getrocknete Tomaten;B;Reisgericht;ganzjährig;Italienisch
+vegan;Spinat-Kartoffelpüree mit Pilz-Sauce;KäptnCook;N/A;;Spinat, Kartoffeln, Champignons;B;Mixed;ganzjährig;Deutsch
+vegetarisch;Caprese-Pasta;KäptnCook;N/A;;Cherrytomaten, Mozzarella, Nudeln;B;Nudelgericht;ganzjährig;Italienisch
+vegan;einfache Linsenbolognese;Firefox;mit Zucchini;;Linsen, Möhren, Frühlingszwiebeln, Nudeln;A;Nudelgericht;ganzjährig;Italienisch
+vegan;Wirsingeintopf;OneNote;N/A;;Wirsing, Kartoffeln;B;Eintopf;Winter, Frühling;Deutsch
+vegan;Gnocchi mit Rosenkohl;OneNote;mit Sesam, Paprika, frische Kräuter;;Gnocchi, Rosenkohl, Paprika;B;Pfannengericht;Winter;Deutsch
