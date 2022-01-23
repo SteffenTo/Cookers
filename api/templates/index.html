@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Startseite</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Cookers{% endblock %}
+{% block content %}
 <form method="Post">
     <input type="submit" name="redirect_users" value="Wähle deinen Benutzer">
     <input type="submit" name="redirect_add_recipes" value="Füge neue Leckereien hinzu!">
     <input type="submit" name="redirect_meal_plan" value="Generiere meinen Wochenplan">
 </form>
-</body>
-</html>
+{% endblock %}

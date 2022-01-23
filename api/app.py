@@ -224,34 +224,58 @@ def show_ingredients():
     else:
         return render_template("show_ingredients.html")
 
-@app.route("/import", methods=["POST", "GET"])
+@app.route("/import", methods=["GET", "POST"])
 def import_csv():
-    with open(r"C:\Users\I015661\PycharmProjects\Cookers\Rezept_SQL.csv") as csv_file:
-        csv_reader = csv.reader(csv_file, delimiter=";")
-        for index, row in enumerate(csv_reader):
-            if index == 0:
-                pass
-            else:
-                if row[3] == "N/A":
-                    row[3] = ""
+    if request.method == "POST":
+        if request.form.get("import_csv"):
+            with open(r"C:\Users\I015661\PycharmProjects\Cookers\Rezept_SQL.csv") as csv_file:
+                csv_reader = csv.reader(csv_file, delimiter=";")
+                for index, row in enumerate(csv_reader):
+                    if index == 0:
+                        pass
+                    else:
+                        if row[3] == "N/A":
+                            row[3] = ""
 
-                recipe = Recipes(recipe_name=row[1], owner=current_user, form_of_diet=row[0],
-                                 source_of_recipe=row[2],
-                                 additional_information=row[3], duration=row[4],
-                                 balanced_nutrients=row[6],
-                                 kind_of_meal=row[7], season=row[8], cuisine=row[9])
-                db.session.add(recipe)
-                db.session.commit()
-                current_recipe = Recipes.query.filter_by(recipe_name=row[1], user_id=current_user.get_id()).first()
-                list_of_ingredients = row[5].split(", ")
-                for element in list_of_ingredients:
-                    ingredients = Ingredients(ingredient=element, amount=1, unit="Einheit", recipe_name=current_recipe,
-                                              owner=current_user)
-                    db.session.add(ingredients)
-                    db.session.commit()
-    return redirect(url_for("index"))
+                        recipe = Recipes(recipe_name=row[1], owner=current_user, form_of_diet=row[0],
+                                         source_of_recipe=row[2],
+                                         additional_information=row[3], duration=row[4],
+                                         balanced_nutrients=row[6],
+                                         kind_of_meal=row[7], season=row[8], cuisine=row[9])
+                        db.session.add(recipe)
+                        db.session.commit()
+                        current_recipe = Recipes.query.filter_by(recipe_name=row[1], user_id=current_user.get_id()).first()
+                        list_of_ingredients = row[5].split(", ")
+                        for element in list_of_ingredients:
+                            ingredients = Ingredients(ingredient=element, amount=1, unit="Einheit", recipe_name=current_recipe,
+                                                      owner=current_user)
+                            db.session.add(ingredients)
+                            db.session.commit()
+            return redirect(url_for("index"))
+    else:
+        return render_template("import.html")
+
+@app.route("/filter_recipes", methods=["GET", "POST"])
+def filter_recipes():
+    if request.method == "POST":
+        pass
+    else:
+        single_ingredients = []
+        #render_template("filter_recipes.html")
+        list_of_ingredients = Ingredients.query.filter_by(user_id=current_user.get_id()).all()
+        ingredient_schema = IngredientSchema(many=True)
+        ingredient_list_json = ingredient_schema.dump(list_of_ingredients)
+        for ingredient in ingredient_list_json:
+            if ingredient.get("ingredient") not in single_ingredients:
+                single_ingredients.append(ingredient.get("ingredient"))
+            else:
+                pass
+        print(single_ingredients)
+        return Response(json.dumps(ingredient_list_json), mimetype="application/json")
+        #print(test2)
+        print(ingredient_schema)
 
 
 if __name__ == "__main__":
-    app.run(host="localhost", port="5000")
+    app.run(debug=True, host="localhost", port="5000")
 
