@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Cookers{% endblock %}
+{% block content %}
 <form method="Post">
     <div><label>Bitte gib deinen gewünschten Benutzernamen ein: <input type="text" name ="username"></label></div>
     <div><label>Bitte gib deine E-Mail ein: <input type="text" name ="email"></label></div>
     <div><label>Bitte gib dein Passwort ein: <input type="password" name ="password"></label></div>
     <input type="submit" name="register_user" value="Erstelle den Account!">
     <input type="submit" name="redirect_index" value="Zurück zur Startseite!">
-</body>
-</html>
+</form>
+{% endblock %}

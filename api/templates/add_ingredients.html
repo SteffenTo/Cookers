@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<body>
+{% extends "base.html" %}
+{% block title %}Cookers{% endblock %}
+{% block content %}
 <form method="Post">
     <div><label>Rezeptname: <input type="text" name ="recipe_name"> </label>
         <label>Ernährungsform: <input type="text" name ="form_of_diet"> </label>
@@ -18,5 +18,4 @@
     <input type="submit" name="add_ingredient" value="Füge das Rezept und die Zutaten hinzu">
     <input type="submit" name="redirect_index" value="Zurück zur Startseite.">
 </form>
-</body>
-</html>
+{% endblock %}

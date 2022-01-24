@@ -146,7 +146,7 @@ def logout():
     return redirect(url_for("index"))
 
 
-@app.route("/addingredients", methods=["POST", "GET"])
+@app.route("/add_ingredients", methods=["POST", "GET"])
 @login_required
 def add_ingredient():
     if request.method == "POST":
@@ -179,7 +179,7 @@ def add_ingredient():
         return render_template("add_ingredients.html")
 
 
-@app.route("/recipes", methods=["POST", "GET"])
+@app.route("/generate_recipes", methods=["POST", "GET"])
 @login_required
 def random_recipes():
     recipe_list = []

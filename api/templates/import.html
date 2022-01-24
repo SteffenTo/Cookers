@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Import</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Cookers{% endblock %}
+{% block content %}
 <form method="Post">
     <input type="submit" name="import_csv" value="Importiere meine Datei!">
 </form>
-</body>
-</html>
+{% endblock %}
