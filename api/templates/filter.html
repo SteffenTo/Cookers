@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Cookers{% endblock %}
+{% block content %}
+<form method="Post">
+    {% for ingredient in unique_ingredients%}
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" value="" id="{{ingredient}}">
+      <label class="form-check-label" for="{{ingredient}}">
+          {{ingredient}}
+      </label>
+    </div>
+    {% endfor %}
+    <input type="submit" name="enter_ingredients" value="Zeig mir passende Rezepte!">
+</form>
+{% endblock %}

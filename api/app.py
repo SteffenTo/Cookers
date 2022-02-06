@@ -228,7 +228,7 @@ def show_ingredients():
 def import_csv():
     if request.method == "POST":
         if request.form.get("import_csv"):
-            with open(r"C:\Users\I015661\PycharmProjects\Cookers\Rezept_SQL.csv") as csv_file:
+            with open(r"Rezept_SQL.csv") as csv_file:
                 csv_reader = csv.reader(csv_file, delimiter=";")
                 for index, row in enumerate(csv_reader):
                     if index == 0:
@@ -258,22 +258,20 @@ def import_csv():
 @app.route("/filter_recipes", methods=["GET", "POST"])
 def filter_recipes():
     if request.method == "POST":
-        pass
+        possible_recipes = ["Linsensuppe"]
+        return Response(json.dumps(possible_recipes), mimetype="application/json")
     else:
-        single_ingredients = []
+        unique_ingredients = []
         #render_template("filter_recipes.html")
         list_of_ingredients = Ingredients.query.filter_by(user_id=current_user.get_id()).all()
         ingredient_schema = IngredientSchema(many=True)
         ingredient_list_json = ingredient_schema.dump(list_of_ingredients)
         for ingredient in ingredient_list_json:
-            if ingredient.get("ingredient") not in single_ingredients:
-                single_ingredients.append(ingredient.get("ingredient"))
+            if ingredient.get("ingredient") not in unique_ingredients:
+                unique_ingredients.append(ingredient.get("ingredient"))
             else:
                 pass
-        print(single_ingredients)
-        return Response(json.dumps(ingredient_list_json), mimetype="application/json")
-        #print(test2)
-        print(ingredient_schema)
+        return render_template("filter.html", unique_ingredients=unique_ingredients)
 
 
 if __name__ == "__main__":
