@@ -8,8 +8,8 @@ from flask_bcrypt import Bcrypt
 import csv
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:M43hdr3sch3r@localhost/cookers"
-app.config["SECRET_KEY"] = "test1234"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:XXX@localhost/cookers"
+app.config["SECRET_KEY"] = "XXX"
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 bcrypt = Bcrypt(app)
